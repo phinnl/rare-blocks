@@ -2,7 +2,7 @@ import MacGroupMenu from './group-menu';
 import MacNavItem from './nav-item';
 
 const actionItems = [
-  <MacNavItem className="flex items-center opacity-70 gap-[13.2px]">
+  <MacNavItem key="1" className="flex items-center opacity-70 gap-[13.2px]">
     <svg
       width="17"
       height="15"
@@ -45,7 +45,7 @@ const actionItems = [
     </svg>
     <span className="text-[#1F2A40]">User Flow</span>
   </MacNavItem>,
-  <MacNavItem className="flex items-center opacity-70 gap-[13.2px]">
+  <MacNavItem key="2" className="flex items-center opacity-70 gap-[13.2px]">
     <svg
       width="18"
       height="19"
@@ -104,7 +104,7 @@ const actionItems = [
     </svg>
     <span className="text-[#1F2A40]">Content Calendar</span>
   </MacNavItem>,
-  <MacNavItem className="flex items-center opacity-70 gap-[13.2px]">
+  <MacNavItem key="3" className="flex items-center opacity-70 gap-[13.2px]">
     <svg
       width="18"
       height="16"
@@ -150,7 +150,7 @@ const actionItems = [
 ];
 
 const profileItems = [
-  <MacNavItem className="flex items-center opacity-70 gap-[13.2px]">
+  <MacNavItem key="1" className="flex items-center opacity-70 gap-[13.2px]">
     <svg
       width="13"
       height="16"
@@ -177,7 +177,7 @@ const profileItems = [
     </svg>
     <span className="text-[#1F2A40]">All Profiles</span>
   </MacNavItem>,
-  <MacNavItem className="flex items-center opacity-70 gap-[13.2px]">
+  <MacNavItem key="2" className="flex items-center opacity-70 gap-[13.2px]">
     <svg
       width="16"
       height="18"
@@ -236,7 +236,7 @@ const profileItems = [
     </svg>
     <span className="text-[#1F2A40]">Segments</span>
   </MacNavItem>,
-  <MacNavItem className="flex items-center opacity-70 gap-[13.2px]">
+  <MacNavItem key="3" className="flex items-center opacity-70 gap-[13.2px]">
     <svg
       width="16"
       height="18"
@@ -282,7 +282,7 @@ const profileItems = [
 ];
 
 const dynamicItems = [
-  <MacNavItem className="flex items-center opacity-70 gap-[13.2px]">
+  <MacNavItem key="1" className="flex items-center opacity-70 gap-[13.2px]">
     <svg
       width="16"
       height="17"
