@@ -1,0 +1,1 @@
+export { default as MacTab } from "./mac-tab";

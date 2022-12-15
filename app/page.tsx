@@ -1,57 +1,64 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import { Button } from '@/components';
+import { MacTab } from '@/components/mac-tab';
+import { inter } from '@/fonts';
+import clsx from 'clsx';
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js 13!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://beta.nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js 13</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
+    <main className="pt-[60px]">
+      <div className="max-w-[627px] mx-auto">
+        <div>
+          <p
+            className={clsx(
+              inter.className,
+              'text-lg font-normal tracking-normal text-center text-[#52525B]'
+            )}
           >
-            <h2>Examples &rarr;</h2>
-            <p>Explore the Next.js 13 playground.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates/next.js/app-directory?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>Deploy your Next.js site to a public URL with Vercel.</p>
-          </a>
+            Smart email campaign builder, made for Developers
+          </p>
+          <h2 className="mt-5 font-extrabold text-[52px] leading-[62px] text-center text-[#18181B]">
+            Turn your visitors into profitable business
+          </h2>
         </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+        <div className="flex items-center mt-9 justify-center gap-5">
+          <Button className="px-[21px] py-4 text-lg leading-6">
+            Get more customers
+          </Button>
+          <Button
+            outlined
+            className="px-[21px] py-4 text-lg leading-6 flex items-center gap-[10px]"
+          >
+            <svg
+              width="19"
+              height="18"
+              viewBox="0 0 19 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.18003 13.4261C6.8586 14.3918 5 13.448 5 11.8113V5.43865C5 3.80198 6.8586 2.85821 8.18003 3.82387L12.5403 7.01022C13.6336 7.80916 13.6336 9.44084 12.5403 10.2398L8.18003 13.4261Z"
+                stroke="#18181B"
+                stroke-width="2"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <span>Watch free demo</span>
+          </Button>
+        </div>
+        <p
+          className={clsx(
+            inter.className,
+            'mt-[34px] font-normal text-base leading-[26px] text-center text-[#71717A]'
+          )}
         >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
-    </div>
-  )
+          60 Days free trial . No credit card required
+        </p>
+      </div>
+      <div className="mt-[100px] mb-20">
+        <MacTab />
+      </div>
+    </main>
+  );
 }
