@@ -2,6 +2,15 @@ import { Button } from '@/components';
 import { MacTab } from '@/components/mac-tab';
 import { inter } from '@/fonts';
 import clsx from 'clsx';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  openGraph: {
+    title: "root",
+    description: "root",
+    url: "https://rare-blocks.vercel.app/"
+  }
+}
 
 export default function Home() {
   return (
